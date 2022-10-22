@@ -1,9 +1,9 @@
 import CartIcon from 'components/Cart/CartIcon';
 import classes from './style.module.css';
 
-const CartButton = () => {
+const CartButton = ({ onClick }) => {
 	return (
-		<button className={classes.button}>
+		<button onClick={onClick} className={classes.button}>
 			<span className={classes.icon}>
 				<CartIcon />
 			</span>
